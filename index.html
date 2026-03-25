@@ -147,7 +147,7 @@
                   <p>
                     <!-- Botón para abrir modal -->
                     <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#qrModal">
-                        <i class="fas fa-qrcode"></i> QR para compartir
+                        <i class="fas fa-qrcode text-warning"></i> QR para compartir
                     </button>
                   </p>
                 </div>
@@ -194,19 +194,19 @@
         <!-- Modal -->
         <div class="modal fade" id="qrModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                
-                <div class="modal-header">
-                <h5 class="modal-title"><i class="fas fa-share-square"></i> <span id="modal-title-current-page"></span></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-share-square"></i> <span id="modal-title-current-page"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <div class="modal-body text-center">
+                    <!-- Contenido codigo QR -->
+                    <div id="qrcode" class="d-flex justify-content-center"></div>
+                    </div>
+            
                 </div>
-        
-                <div class="modal-body text-center">
-                <!-- Contenido codigo QR -->
-                <div id="qrcode" class="d-flex justify-content-center"></div>
-                </div>
-        
-            </div>
             </div>
         </div>
     </body>
