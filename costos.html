@@ -42,8 +42,8 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2" onclick="goToExternalPage('https://github.com/JuanMX/micrositio-evento-cientifico')"><i class="fab fa-github"></i> Código fuente</button>
-                <button type="button" class="btn btn-primary" onclick="go404()">Ver la página 404</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="goToExternalPage('https://github.com/JuanMX/micrositio-evento-cientifico')" title="El Código Fuente de este micrositio está disponible en GitHub"><i class="fab fa-github"></i> Código fuente</button>
+                <button type="button" class="btn btn-primary" onclick="go404()" title="Ver la Página 404 - No encontrado">Ver la página 404</button>
             </div>
             </header>
         </div>
@@ -165,7 +165,7 @@
                   </p>
                   <p>
                     <!-- Botón para abrir modal -->
-                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#qrModal">
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#qrModal" title="¡Comparte esta página con alguien cerca de ti mediante un código QR!">
                         <i class="fas fa-qrcode text-warning"></i> QR para compartir
                     </button>
                   </p>
@@ -220,8 +220,14 @@
                   </div>
           
                   <div class="modal-body text-center">
-                  <!-- Contenido codigo QR -->
-                  <div id="qrcode" class="d-flex justify-content-center"></div>
+                    <!-- Contenido codigo QR -->
+                    <div id="qrcode" class="d-flex justify-content-center align-items-center">
+                      <span class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+                      </span>
+                      <span class="fs-2 text-warning" aria-hidden="true">
+                        &nbsp; Generando QR...
+                      </span>
+                    </div>
                   </div>
           
               </div>
